@@ -14,7 +14,7 @@ const Form = () => {
 	useEffect(() => {
 		if (errors.email !== "") inputRef.current["email"].focus();
 		else if (errors.password !== "") inputRef.current["password"].focus();
-	});
+	}, [errors]);
 
 	return (
 		<form
